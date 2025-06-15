@@ -1,14 +1,8 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+use solana_program::{account_info::AccountInfo,Pubkey};
 
-#[cfg(test)]
-mod tests {
-    use super::*;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+fn process_instruction(
+    public_key:&Pubkey,
+    accoumts:&[AccountInfo],
+
+)
